@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="131dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:text="actualizar"
+        app:layout_constraintEnd_toEndOf="@+id/btnInsert"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btnInsert"
+        app:layout_constraintTop_toBottomOf="@+id/btnInsert" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="187dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="8dp"
+        android:text="buscar nombre"
+        app:layout_constraintEnd_toEndOf="@+id/btnDelete"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="@+id/btnDelete"
+        app:layout_constraintTop_toBottomOf="@+id/btnDelete" />
+
+    <EditText
+        android:id="@+id/edtTel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Telefono"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtApe"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtApe"
+        app:layout_constraintTop_toBottomOf="@+id/edtApe" />
+
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Correo"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtTel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtTel"
+        app:layout_constraintTop_toBottomOf="@+id/edtTel" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="132dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:text="guardar"
+        app:layout_constraintEnd_toEndOf="@+id/edtEmail"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/edtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="131dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:text="borrar"
+        app:layout_constraintEnd_toEndOf="@+id/btnUpdate"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/btnUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdate" />
+
+    <EditText
+        android:id="@+id/edtApe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ems="10"
+        android:hint="Apellidos"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edtName"
+        app:layout_constraintTop_toBottomOf="@+id/edtName" />
+
+    <EditText
+        android:id="@+id/edtCod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Cod"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edtName"
+        app:layout_constraintEnd_toEndOf="@+id/edtName"
+        app:layout_constraintStart_toStartOf="@+id/edtName" />
+
+    <Button
+        android:id="@+id/btnBApe"
+        android:layout_width="190dp"
+        android:layout_height="35dp"
+        android:text="buscar apellido"
+        app:layout_constraintEnd_toEndOf="@+id/btnBuscar"
+        app:layout_constraintStart_toStartOf="@+id/btnBuscar"
+        app:layout_constraintTop_toBottomOf="@+id/btnBuscar" />
+
+    <Button
+        android:id="@+id/btnBtel"
+        android:layout_width="196dp"
+        android:layout_height="38dp"
+        android:text="buscar telefono"
+        app:layout_constraintEnd_toEndOf="@+id/btnBApe"
+        app:layout_constraintStart_toStartOf="@+id/btnBApe"
+        app:layout_constraintTop_toBottomOf="@+id/btnBApe" />
+
+    <Button
+        android:id="@+id/btnBemail"
+        android:layout_width="195dp"
+        android:layout_height="38dp"
+        android:text="buscar correo"
+        app:layout_constraintEnd_toEndOf="@+id/btnBtel"
+        app:layout_constraintStart_toStartOf="@+id/btnBtel"
+        app:layout_constraintTop_toBottomOf="@+id/btnBtel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
